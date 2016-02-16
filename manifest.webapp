@@ -13,8 +13,14 @@
     "name": "Quentin L. et Jean-Philippe H.",
     "url": "http://github.com/jp91/FireMetro"
   },
-  "type": "privileged",
-  "permissions": {},
+  "type": "web",
+  "permissions": {
+    "systemXHR":
+    {
+        "description":"Accès aux API"
+    }
+  },
+  "csp" : "",
   "installs_allowed_from": [
     "*"
   ],
