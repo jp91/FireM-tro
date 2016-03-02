@@ -1,13 +1,68 @@
 <html>
 <head>
 
-    <title>Navitia2 - Diagnostique</title>
+    <title>Firemetro</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <meta http-equiv="refresh" content="0; URL=./ptref.html">
 </head>
 
 <body>
-Redirection vers la couverture en cours...
+<ul class="title nav navbar-nav">
+    <li class="title"><a class="title" href="coverage.html?ws_name=api.navitia.io&amp;coverage=fr-idf">Coverage</a></li>
+    <li class="title"><a class="title" href="places.html?ws_name=api.navitia.io&amp;coverage=fr-idf">Places</a></li>
+    <li class="title"><a class="title" href="journey.html?ws_name=api.navitia.io&amp;coverage=fr-idf">itinéraire</a>
+    </li>
+    <li class="title"><a class="title" href="ptref.html?ws_name=api.navitia.io&amp;coverage=fr-idf">Exploration</a></li>
+    <li class="title"><a class="title" href="route_schedules.html?ws_name=api.navitia.io&amp;coverage=fr-idf">Horaires
+        de ligne</a></li>
+    <li class="title"><a class="title" href="stop_schedules.html?ws_name=api.navitia.io&amp;coverage=fr-idf">Horaires à
+        l'arrêt</a></li>
+    <li class="title"><a class="title" href="places_nearby.html?ws_name=api.navitia.io&amp;coverage=fr-idf">Nearby</a>
+    </li>
+    <li class="title"><a class="title" href="time_table.html?ws_name=api.navitia.io&amp;coverage=fr-idf">TT - Arrêt</a>
+    </li>
+</ul>
+<select name="ws_name" id="ws_name" onchange="document.forms[0].submit();">
+    <option selected="" value="api.navitia.io">api.navitia.io</option>
+</select>
+<div id="coverage_list"><select name="coverage" id="coverage" onchange="document.forms[0].submit();">
+    <option selected="" value="fr-idf">fr-idf</option>
+    <option value="fr-ne">fr-ne</option>
+    <option value="fr-nw">fr-nw</option>
+    <option value="fr-se">fr-se</option>
+    <option value="fr-sw">fr-sw</option>
+    <option value="ar">ar</option>
+    <option value="au">au</option>
+    <option value="be">be</option>
+    <option value="br">br</option>
+    <option value="ca-bc">ca-bc</option>
+    <option value="ca-on">ca-on</option>
+    <option value="ca-qc">ca-qc</option>
+    <option value="ch">ch</option>
+    <option value="de">de</option>
+    <option value="ee">ee</option>
+    <option value="es">es</option>
+    <option value="fi">fi</option>
+    <option value="gr">gr</option>
+    <option value="hu">hu</option>
+    <option value="ie">ie</option>
+    <option value="il">il</option>
+    <option value="it">it</option>
+    <option value="jp">jp</option>
+    <option value="lv">lv</option>
+    <option value="mx">mx</option>
+    <option value="nl">nl</option>
+    <option value="nz">nz</option>
+    <option value="se">se</option>
+    <option value="uk">uk</option>
+    <option value="us-ca">us-ca</option>
+    <option value="us-dc">us-dc</option>
+    <option value="us-ma">us-ma</option>
+    <option value="us-ny">us-ny</option>
+    <option value="us-or">us-or</option>
+    <option value="us-tx">us-tx</option>
+    <option value="us-wa">us-wa</option>
+</select></div>
 </body>
 
 </html>
