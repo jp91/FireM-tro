@@ -1,0 +1,71 @@
+body{
+	font-family:  verdana;
+	background: #f6f6f6;
+}
+
+ul{
+	padding-left: 0px;
+
+}
+
+h1{
+	text-align: center;
+	font-family: tahoma;
+}
+
+.title li{
+	list-style: none;
+	background: #EE6146;
+	border-radius: 10px;
+	margin: 0px 0px 5px 0px; 
+	padding: 10px;
+	text-align: center;
+}
+
+.title li:hover{
+	background: #eeb546;
+}
+
+.title li a{
+	text-decoration: none;
+	color: white;
+}
+
+.explorer, .itineraire, .horaires, .nearby{
+	display: block;
+	border-radius: 10px;
+	margin: 0px 0px 5px 0px; 
+	padding: 10px;
+	text-align: center;
+	color: white;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+}
+
+.explorer{
+	background: #ee467f;
+}
+
+.itineraire{
+	background: #46ee61;
+}
+
+.horaires{
+	background: #46d3ee;
+}
+
+.nearby{
+	background: #d3ee46;
+}
+
+table{
+	border: none;
+}
+ul.title li.title a.title {
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	padding:5px;
+
+}

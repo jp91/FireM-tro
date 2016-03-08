@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/leaflet_0.7.7/leaflet.css" />
     <link rel="stylesheet" href="./assets/jquery-ui.js_1.11.4/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body onload="journey_onLoad()">
     <div id="params_div"></div>
@@ -24,14 +25,18 @@
                     <tr>
                         <td width="310px">
                             <label for="from_text">Départ : </label>
-                            <input id="from_text" name="from_text" type="text">      <input id="from" name="from" type="hidden"> 
+                            <input id="from_text" name="from_text" type="text">      <input id="from" name="from" type="hidden"></br> 
                             <label for="to_text">Arrivée : </label>
                             <input id="to_text" name="to_text" type="text">      <input id="to" name="to" type="hidden"> 
                         </td>
+                    </tr>
+                    <tr>
                         <td  valign="top">
                             date : <input type="texte" id="date" name="date" size="5"><br>
                             heure : <input type="texte" id="time" name="time" size="1"><br>
                         </td>
+                    </tr>
+                    <tr>
                         <td  valign="top">
                             Partir après<input type="radio" id="datetime_represents_d" name="datetime_represents" value="departure" checked="true"><br>
                             Arriver avant<input type="radio" id="datetime_represents_a" name="datetime_represents" value="arrival">
@@ -76,8 +81,8 @@
                 <table>
                     <tr>
                         <td colspan="3" align="center">
-                            <input type="button" value="Recherche (F9)" onclick="document.forms[0].submit();"> &nbsp;
-                            <input type="button" value="Partir lundi à 9h (F10)" onclick="submit_monday_search();">
+                            <input class="itineraire" type="button" value="Recherche (F9)" onclick="document.forms[0].submit();"> &nbsp;
+                            <input class="itineraire" type="button" value="Partir lundi à 9h (F10)" onclick="submit_monday_search();">
                             <div name="journey_url" id="journey_url" style="display:inline;font-size:10px"></div><br>
                         </td>
                     </tr>
@@ -88,6 +93,8 @@
                     <td width="50%" valign="top">
                 <div id="journeys"></div>
                     </td>
+                </tr>
+                <tr>
                     <td width="50%">
                 <div id="map-canvas"  style="height: 100%"></div>
                     </td>
