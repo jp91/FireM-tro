@@ -9,7 +9,14 @@
 <body onload="route_schedule_onLoad();">
     <div id="params_div"></div>
     <form id="form1">
-        <div id="menu_div">    </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">FireMetro</a>
+                </div>
+                <div id="menu_div"></div>
+            </div>
+        </nav>
         <h1>Fiche horaire de ligne</h1>
         <div id="params">
             <div id="network_div" style="display:inline;"></div>
@@ -32,11 +39,6 @@
             </tr>
         </table>
     </div>
-    <div id="footer" class="footer">
-        github: <a href="https://github.com/canaltp/navitia-explorer">canaltp/navitia-explorer</a><br/>            
-        <a href="http://www.navitia.io/"><img src='./assets/img/Navitia_logo.png'></a>
-        <a href="http://www.canaltp.fr/"><img src='./assets/img/canaltp_logo.png' ></a>
-    </div>    
     <script type="text/javascript" src="./assets/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./assets/leaflet_0.7.7/leaflet.js"></script>
     <script type="text/javascript" src="./assets/js/lib.js"></script>
