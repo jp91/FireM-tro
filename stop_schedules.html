@@ -8,8 +8,22 @@
 </head>
 <body onload="stop_schedules_onLoad();">
     <div id="params_div"></div>
+    <nav id="menu" class="menu">
+        <header class="menu-header">
+            <span class="menu-header-title">FireMetro</span>
+        </header>
+        <div id="menu_div">
+        </div>
+    </nav>
+
+    <main id="main" class="panel">
     <form id="form1">
-        <div id="menu_div"></div>
+
+        <header class="panel-header">
+            <a class="toggle-button">
+                Ouvrir le menu
+            </a>
+        </header>
         <div id="params">
             <h1>Fiche horaire à l'arrêt</h1>
             <label for="stop_area_name">Zone d'arrêt : </label>
@@ -36,14 +50,11 @@
         </table>
         <div>
     </div>
-    <div id="footer" class="footer">
-        github: <a href="https://github.com/canaltp/navitia-explorer">canaltp/navitia-explorer</a><br/>            
-        <a href="http://www.navitia.io/"><img src='./assets/img/Navitia_logo.png'></a>
-        <a href="http://www.canaltp.fr/"><img src='./assets/img/canaltp_logo.png' ></a>
-    </div>    
+    </main>
     <script type="text/javascript" src="./assets/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./assets/leaflet_0.7.7/leaflet.js"></script>
     <script type="text/javascript" src="./assets/jquery-ui.js_1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/slideout.js"></script>
     <script type="text/javascript" src="./assets/js/lib.js"></script>
     <script type="text/javascript" src="./assets/js/menu.js"></script>
     <script type="text/javascript" src="./assets/js/stop_schedules.js"></script>

@@ -8,19 +8,23 @@
     <title>Recherche d'itinéraire</title>
 </head>
 <body onload="journey_onLoad()">
+<nav id="menu" class="menu">
+    <header class="menu-header">
+        <span class="menu-header-title">FireMetro</span>
+    </header>
+    <div id="menu_div">
+    </div>
+</nav>
+<main id="main" class="panel">
+    <form id="form1">
     <div id="params_div"></div>
-        <nav id="menu" class="menu">
-            <header class="menu-header">
-                <span class="menu-header-title">FireMetro</span>
-            </header>
-            <div id="menu_div">
-            </div>
-        </nav>
-        <main id="main" class="panel">
+
+
+
             <header class="panel-header">
-                <button class="toggle-button">
-                    <span class="tooltip">Ouvrir le menu</span>
-                </button>
+                <a class="toggle-button">
+                    Ouvrir le menu
+                </a>
             </header>
 
 
@@ -89,7 +93,6 @@
                         <tr>
                             <td colspan="3" align="center">
                                 <input class="itineraire" type="button" value="Recherche (F9)" onclick="document.forms[0].submit();"> &nbsp;
-                                <input class="itineraire" type="button" value="Partir lundi à 9h (F10)" onclick="submit_monday_search();">
                                 <div name="journey_url" id="journey_url" style="display:inline;font-size:10px"></div><br>
                             </td>
                         </tr>
@@ -109,7 +112,7 @@
                 </table>
             </div>
         </form>
-        </main>
+    </main>
 
     <div id="footer" class="footer">
         github: <a href="https://github.com/canaltp/navitia-explorer">canaltp/navitia-explorer</a><br/>            
