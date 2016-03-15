@@ -15,10 +15,6 @@ var menu={
         {
             name:"ptref",
             title:"Exploration"
-        },
-        {
-            name:"places_nearby",
-            title:"À proximité"
         }
 
     ]
