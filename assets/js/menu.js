@@ -1,10 +1,6 @@
 var menu={
     page_list:[
         {
-            name:"coverage",
-            title:"Couverture réseau"
-        },
-        {
             name:"journey",
             title:"Recherche itinéraires"
         },
