@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/leaflet_0.7.7/leaflet.css" />
     <link rel="stylesheet" href="./assets/jquery-ui.js_1.11.4/jquery-ui.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
 <body onload="journey_onLoad()">
     <div id="params_div"></div>
@@ -11,14 +13,14 @@
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Navitia Explorer</a>
+              <a class="navbar-brand" href="#">FireMetro</a>
             </div>
-            <div id="menu_div">    </div>
+            <div id="menu_div"></div>
           </div>
         </nav>        
         <input type="hidden" id="forbidden_uris" name="forbidden_uris" value="">
         <div id="content" >
-            <h1 style="text-align:center;padding:0px;margin:0px">Recherche/diagnostique d'itinéraire</h1>
+            <h1 style="text-align:center;padding:0px;margin:0px">Recherche d'itinéraire</h1>
             <div id="params1" style="margin:0px;padding:0px;">
                 <table>
                     <tr>
@@ -67,12 +69,16 @@
                                 <option selected></option><option>base_schedule</option><option>adapted_schedule</option><option>realtime</option>
                             </select>
                         </td>
+                        <td  valign="top"  style="font-size:10px">
+                            meta-système <input type="checkbox" id="metasystem" name="metasystem" value="on"> <br>
+                            token méta-système: <input type="text" id="metasystem_token" name="metasystem_token">
+                        </td>
                     </tr>
                 </table>
                 <table>
                     <tr>
                         <td colspan="3" align="center">
-                            <input type="button" value="Recherche (F9)" onclick="document.forms[0].submit();"> &nbsp;
+                            <input type="button" value="Recherche" onclick="document.forms[0].submit();"> &nbsp;
                             <input type="button" value="Partir lundi à 9h (F10)" onclick="submit_monday_search();">
                             <div name="journey_url" id="journey_url" style="display:inline;font-size:10px"></div><br>
                         </td>
@@ -85,17 +91,12 @@
                 <div id="journeys"></div>
                     </td>
                     <td width="50%">
-                <div id="map-canvas"  style="height: 100%"></div>
+                        <div id="map-canvas"  style="height: 100%"></div>
                     </td>
                 </tr>
             </table>
         </div>
     </form>
-    <div id="footer" class="footer">
-        github: <a href="https://github.com/canaltp/navitia-explorer">canaltp/navitia-explorer</a><br/>            
-        <a href="http://www.navitia.io/"><img src='./assets/img/Navitia_logo.png'></a>
-        <a href="http://www.canaltp.fr/"><img src='./assets/img/canaltp_logo.png' ></a>
-    </div>    
     <script type="text/javascript" src="./assets/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./assets/jquery-ui.js_1.11.4/jquery-ui.js"></script>
     <script type="text/javascript" src="./assets/leaflet_0.7.7/leaflet.js"></script>
@@ -104,5 +105,6 @@
     <script type="text/javascript" src="./assets/js/lib.js"></script>
     <script type="text/javascript" src="./assets/js/conversion.js"></script>
     <script type="text/javascript" src="./assets/js/journey.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

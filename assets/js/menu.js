@@ -1,42 +1,22 @@
-
 var menu={
     page_list:[
         {
-            name:"coverage",
-            title:"Coverage"
-        },
-        {
-            name:"tyr",
-            title:"Tyr"
-        },
-        {
-            name:"places",
-            title:"Places"
-        },
-        {
             name:"journey",
-            title:"itinéraire"
+            title:"Recherche itinéraires"
+        },
+        {
+            name:"route_schedules",
+            title:"Horaires lignes"
+        },
+        {
+            name:"stop_schedules",
+            title:"Horaires arrêts"
         },
         {
             name:"ptref",
             title:"Exploration"
-        },
-        {
-            name:"route_schedules",
-            title:"Horaires de ligne"
-        },
-        {
-            name:"stop_schedules",
-            title:"Horaires à l'arrêt"
-        },
-        {
-            name:"places_nearby",
-            title:"Nearby"
-        },
-        {
-            name:"time_table",
-            title:"TT - Arrêt"
         }
+
     ]
 };
 
